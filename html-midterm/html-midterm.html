@@ -39,7 +39,7 @@
         </tr>
         <tr>
             <td>John</td>
-            <td>25<td>
+            <td>25</td>
         </tr>
         <tr>
             <td>Jane</td>
@@ -57,26 +57,28 @@
 
     <!-- This is an unclosed comment
         Errors:
-        DOCTYPE declaration missing; insert DOCTYPE declaration with "! ENTER" commands
-        Character encoding declaration missing; I added it within the head
-        charset and title should be within head; I moved them to inside the head
-        <h1> is missing closing tag </h1>; I added the closing tag </h1>
-        </P> is missing opening tag <p>; I added opening tag <p>
-        List opens with <ol> and closes with </ul>; I changed the closing tag to </ol>
-        <p> is missing closing tag </P>; I added the closing tag </p>
-        <img> element needs to have alt attribute; I added the attribute "coding meme"
-        the <a> tag for example.com is missing closing tag </a> (incorrectly closes with </img> instead); I change dit to </a> closing tag
-        table is missing table id attribute within the <table> opening tag; I added id as "random table"
-        table is missing closing </table> tag; I added closing </table> tag
-        image source should be written as image src; I changed it to img src
-        <center> tag is obsolete; I changed it to <p style="text align:center">
-        bgcolor is incorrect to style this line of text; To edit the background color, I used <p style="background-color: lightgray"</p>
-        unclosed comment needs closing; I closed it with closing comment tag
-        "link without closing tag" needs closing tag </a>; I added </a> closing tag
-        <em> is used to italicize text, not underline it; I changed it to <u> to underline
-        Underlined text closing tag is outside of paragraph closing tag; I changed the closing from </p></em> to </em></p>
-        descriptive list title should be wrapped by <dt> instead of <li>; I changed the <li> to <dt>
-        Descriptive list item text should be wrapped by <dd> instead of <li>; i changed it to <dd> instead of <li>
+        1.)html tag at top should be declared as a DOCTYPE declaration which is missing; I inserted DOCTYPE declaration 
+        2.)Head is missing closing tag </head>; I added closing tag </head> 
+        3.)Character encoding declaration missing; I added it within the head
+        4.)title should be within head; I moved it to inside the head
+        5.)<h1> is missing closing tag </h1>; I added the closing tag </h1>
+        6.)</P> is missing opening tag <p>; I added opening tag <p>
+        7.)List opens with <ol> and closes with </ul>; I changed the closing tag to </ol>
+        8.)<p> is missing closing tag </p>; I added the closing tag </p>
+        9.)<img> element needs to have alt attribute; I added the alt attribute "coding meme"
+        10.)the <a> tag for example.com is missing closing tag </a> (incorrectly closes with </img> instead); I change dit to </a> closing tag
+        11.)table is missing table id attribute within the <table> opening tag; I added id as "random table"
+        12.)the value 25 in the table is missing the / in the closing tag; I added the / to </td>
+        13.)table is missing closing </table> tag; I added closing </table> tag
+        14.)image source should be written as image src instead of image source; I changed it to img src
+        15.)<center> tag is obsolete; I changed it to <p style="text align:center">
+        16.)bgcolor is incorrect to style this line of text; To edit the background color, I used <p style="background-color: lightgray"</p>
+        17.)unclosed comment needs closing; I closed it with closing comment tag 
+        18.)"link without closing tag" needs closing tag </a>; I added </a> closing tag
+        19.)<em> is used to italicize text, not underline it; I changed it to <u> to underline the text
+        20.)Underlined text closing tag is outside of paragraph closing tag; I changed the closing from </p></u> to </u></p> (u used to be em)
+        21.)descriptive list title should be wrapped by <dt> instead of <li>; I changed the <li> to <dt>
+        22.)Descriptive list item text should be wrapped by <dd> instead of <li>; i changed it to <dd> instead of <li>
         </!-->
 
         
@@ -89,5 +91,31 @@
         <dt>Descriptive Item Title</dt>
         <dd>Descriptive Item Text</dd>
     </dl>
+    <ol>
+        <li>html tag at top should be declared as a DOCTYPE declaration which is missing; I inserted DOCTYPE declaration </li>
+        <li>Head is missing closing tag &lt;/head&gt;; I added closing tag &lt;/head&gt; </li>
+        <li>Character encoding declaration missing; I added it within the head</li>
+        <li>Title should be within head; I moved it to inside the head</li>
+        <li>&lt;h1&gt; is missing closing tag &lt;/h1&gt;; I added the closing tag &lt;/h1&gt;</li>
+        <li>&lt;/P&gt; is missing opening tag &lt;p&gt;; I added opening tag &lt;p&gt;</li>
+        <li>List opens with &lt;ol&gt; and closes with &lt;/ul&gt;; I changed the closing tag to &lt;/ol&gt;</li>
+        <li>&lt;p&gt; is missing closing tag &lt;/p&gt;; I added the closing tag &lt;/p&gt;</li>
+        <li>&lt;img&gt; element needs to have alt attribute; I added the alt attribute "coding meme"</li>
+        <li>The &lt;a&gt; tag for example.com is missing closing tag &lt;/a&gt; (incorrectly closes with &lt;/img&gt; instead); I changed it to &lt;/a&gt; closing tag</li>
+        <li>Table is missing table id attribute within the &lt;table&gt; opening tag; I added id as "random table"</li>
+        <li>Table is missing closing &lt;/table&gt; tag; I added closing &lt;/table&gt; tag</li>
+        <li>The value 25 in the table is missing the / in the closing tag; I added the / to  &lt;/td &gt;</li>
+        <li>Image source should be written as image src instead of image source; I changed it to img src</li>
+        <li>&lt;center&gt; tag is obsolete; I changed it to &lt;p style="text align:center"&gt;</li>
+        <li>bgcolor is incorrect to style this line of text; To edit the background color, I used &lt;p style="background-color: lightgray"&lt;/p&gt;</li>
+        <li>Unclosed comment needs closing; I closed it with closing comment tag</li>
+        <li>"link without closing tag" needs closing tag &lt;/a&gt;; I added &lt;/a&gt; closing tag</li>
+        <li>&lt;em&gt; is used to italicize text, not underline it; I changed it to &lt;u&gt; to underline the text</li>
+        <li>Underlined text closing tag is outside of paragraph closing tag; I changed the closing from &lt;/p&gt;&lt;/u&gt; to &lt;/u&gt;&lt;/p&gt;</li>
+        <li>Descriptive list title should be wrapped by &lt;dt&gt; instead of &lt;li&gt;; I changed the &lt;li&gt; to &lt;dt&gt;</li>
+        <li>Descriptive list item text should be wrapped by &lt;dd&gt; instead of &lt;li&gt;; i changed it to &lt;dd&gt; instead of &lt;li&gt;</li>
+      
+        
+    </ol>
 </body>
 </html>
