@@ -1,14 +1,17 @@
 <html>
-<head>
-    
-    <html language="en">
-    
-    <title>Error-Filled Page</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Error-filled page</title>
+    </head>
+   
     
 <body>
-    <h1>Welcome to My Error-Filled Page
+    <h1>Welcome to My Error-Filled Page </h1>
     
-    This is a paragraph with mismatched tags and missing closing tags.</p>
+    <p>This is a paragraph with mismatched tags and missing closing tags.</p>
     
     <ol>
         <li>Item 1</li>
@@ -21,15 +24,15 @@
         <li>Item 8</li>
         <li>Item 9</li>
         <li>Item 10</li>
-    </ul>
+    </ol>
 
-    <p>This is another paragraph without proper indentation.
+    <p>This is another paragraph without proper indentation.</p>
     
-    <img src="image.jpg">
+    <img src="image.jpg" alt="coding meme">
 
-    <a href="https://www.example.com" target="_blank">Click me!</img>
+    <a href="https://www.example.com" target="_blank">Click me!</a>
 
-    <table>
+    <table id="random table">
         <tr>
             <th>Name</th>
             <th>Age</th>
@@ -42,7 +45,8 @@
             <td>Jane</td>
             <td>30</td>
         </tr>
-    
+    </table>
+
     <img src="error.jpeg" alt="Error Image">
 
     <center>This is centered text.</center>
@@ -53,27 +57,33 @@
 
     <!-- This is an unclosed comment
         Errors:
-        DOCTYPE declaration missing 
+        DOCTYPE declaration missing; insert DOCTYPE declaration with "! ENTER" commands
         Character encoding declaration missing
-        charsest and title shoudl be within header
+        charset and title shoudl be within head
         <hi> is missing closing tag </h1> 
         </P> is missing opening tag <p>
         List opens with <ol> and closes with </ul>
         <p> is missing closing tag </P>
         <img> element needs to have alt attribute
         the <a> tag for example.com is missing closing tag </a> (incorrectly closes with </img> instead)
-        table is missing table id within the <table> opening tag
+        table is missing table id attribute within the <table> opening tag
         table is missing closing </table> tag
         image source should be written as image src 
+        unclosed comment needs closing 
+        "link without closing tag" needs closing tag </a>
+        Underlined text closing tag is outside of paragraph closing tag
+        descriptive list items shoudl be wrapped by <dt> instead of <li>
+        </!-->
+
         
 
-    <a href="#">Link without closing tag
+    <a href="#">Link without closing tag</a>
 
-    <p><em>Underlined text</p></em>
+    <p><em>Underlined text</em></p>
 
     <dl>
-        <li>Descriptive Item Title</li>
-        <li>Descriptive Item Text</li>
+        <dt>Descriptive Item Title</dt>
+        <dt>>Descriptive Item Text</dt>
     </dl>
 </body>
 </html>
