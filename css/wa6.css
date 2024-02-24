@@ -3,19 +3,22 @@ html {
   
   }
 
-  .container{
-    background-image: url(../img/marina.png) no-repeat;
-    background-size: 100%;
-   
+  body{
+    background: url(../img/marina.png) no-repeat;
+    background-size: cover;
+    height: 200px;
+    
   }
-
-  .boxa{
-    background-color: rgba(173, 216, 230, 0.693);
-    Position: absolute;
+  .box{
+    background-color: rgba(218, 230, 240, 0.745);
+    Position: relative;
+    border: solid orange;
+    border-width: 2mm;
+    border-radius: 2mm;
     top: 12mm;
     left: 20mm;
-    width: 128px;
-    height: 250px;
+    width: 200px;
+    height: 150px;
     font-size: 20px;
     letter-spacing: 1px;
     text-align: center;
@@ -25,9 +28,19 @@ html {
   }
 
   .boxb{
-    background-color: rgba(240, 248, 255, 0.507);
-    Position: absolute;
-    top: 2000mm;
-    left: 20mm;
-    width: 128px;
+    background-color: rgba(218, 230, 240, 0.745);
+    Position: relative;
+    border: solid orange;
+    border-width: 2mm;
+    border-radius: 2mm;
+    top: 12mm;
+    right: -150mm;
+    width: 300px;
+    height: 100px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 44px 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
   }
