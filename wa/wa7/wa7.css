@@ -76,9 +76,4 @@ body {
     }
   }
 
-  @media screen and (min-width:500px){
-    .grid{
-        display: flex;
-        felx-direction: row;
-    }
-  }
+  
