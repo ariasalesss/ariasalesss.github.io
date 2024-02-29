@@ -71,7 +71,14 @@ body {
         gap: 20px;
         text-align: center;
     }
-    nax{
+    nav{
         position: static;
+    }
+  }
+
+  @media screen and (min-width:500px){
+    .grid{
+        display: flex;
+        felx-direction: row;
     }
   }
