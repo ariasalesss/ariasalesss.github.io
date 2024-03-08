@@ -77,14 +77,15 @@ nav {
 
   .concert-date{
     font-size:15px;
-    color: #ffffff;
+    color: #000000;
     font-family:Arial, Helvetica, sans-serif;
     font-size:20px;
     float:left;
-    padding:5px 10px 100px 5px;
-    background: linear-gradient(to bottom, #00303f00 0%,#DCAE1D 50%,#00000000 100%);
+    
+    background:#CAE4DB;
+    padding: 0px 10px 0px 5px;
     text-align:center;
-    line-height: 15px;
+    
   }
 
   .description{
@@ -92,7 +93,9 @@ nav {
     color: #CAE4DB;
     font-size:17px;
     text-align:center;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 5px 5px 10px;
+    overflow: hidden;
+   
   }
 
 
@@ -142,7 +145,7 @@ nav {
         text-align: center;
     }
     nav{
-        position: static;
+        position: relative;
     }
   }
 
