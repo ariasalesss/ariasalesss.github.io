@@ -87,6 +87,7 @@ nav {
     padding: 0px 10px 0px 5px;
     text-align:center;
     
+    
   }
 
   .description{
@@ -96,6 +97,7 @@ nav {
     text-align:left;
     padding: 5px 5px 5px 10px;
     overflow: hidden;
+    
    
   }
 
@@ -138,9 +140,22 @@ nav {
   }
 
 
-
+.btn{
+    text-decoration: none;
+    padding:0.5rem;
+    border: 1px solid white;
+    background-color: white;
+    color:#00303F;
+    
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+    
+}
 
   
+
+
 
   @media screen and (max-width: 400px){
     .grid{
