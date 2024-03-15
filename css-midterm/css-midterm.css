@@ -143,8 +143,8 @@ nav {
 .btn{
     text-decoration: none;
     padding:0.5rem;
-    border: 1px solid white;
-    background-color: white;
+    border: 1px solid #CAE4DB;
+    background-color: #CAE4DB;
     color:#00303F;
     
   position: fixed; 
