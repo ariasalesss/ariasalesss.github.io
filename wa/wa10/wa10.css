@@ -1,0 +1,47 @@
+body {
+    font-family: helvetica, sans-serif;
+    width: 700px;
+    height: 700px;
+    background-image: linear-gradient(to bottom right, rgb(231, 9, 9), rgb(243, 88, 222));
+    height:100%;
+    margin:0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: cursive;
+    align-items: center;
+      
+  }
+
+  label {
+    font-weight: bold;
+    font-family: cursive
+  }
+
+  div {
+    padding-bottom: 20px;
+  }
+
+  input[type="text"] {
+    padding: 5px;
+    width: 150px;
+    font-family: cursive;
+
+  }
+
+  p {
+    background: #ffffff;
+    color: #000000;
+    padding: 10px;
+    visibility: hidden;
+    font-family: cursive;
+    
+
+  }
+
+  .randomize{
+    background-color: aquamarine;
+    font-weight: bold;
+    align-items: center;
+  }
+  
