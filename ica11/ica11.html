@@ -66,10 +66,10 @@
         panel.parentNode.removeChild(panel),
         );
 
-        if (msgType === "ball") {
+        if (msgType === "checkers") {
             msg.style.backgroundImage = "url(redBall.png)";
             panel.style.backgroundColor = "pink";
-            } else if (msgType === "animal") {
+            } else if (msgType === "fur") {
             msg.style.backgroundImage = "url(sleepyraccoon.png)";
             panel.style.backgroundColor = "purple";
             } else {
@@ -85,7 +85,7 @@
     
     btn.addEventListener("click",() => {
       let userInput = prompt("enter a message");
-      let typeInput = prompt("Do you want an animal or a ball?");
+      let typeInput = prompt("Do you want fur or checkers?");
     displayMessage(userInput, typeInput);
 
     }
