@@ -66,11 +66,11 @@
         panel.parentNode.removeChild(panel),
         );
 
-        if (msgType === "warning") {
-            msg.style.backgroundImage = "url(warning.png)";
+        if (msgType === "ball") {
+            msg.style.backgroundImage = "url(redBall.png)";
             panel.style.backgroundColor = "pink";
-            } else if (msgType === "chat") {
-            msg.style.backgroundImage = "url(chat.png)";
+            } else if (msgType === "animal") {
+            msg.style.backgroundImage = "url(sleepyraccoon.png)";
             panel.style.backgroundColor = "purple";
             } else {
             msg.style.paddingLeft = "20px";
@@ -85,7 +85,7 @@
     
     btn.addEventListener("click",() => {
       let userInput = prompt("enter a message");
-      let typeInput = prompt("Is this a warning or a chat?");
+      let typeInput = prompt("Do you want an animal or a ball?");
     displayMessage(userInput, typeInput);
 
     }
