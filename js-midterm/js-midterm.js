@@ -1,6 +1,6 @@
 // Create canvas setup
-const canvas = document.createElement("canvas");
-document.body.appendChild(canvas);
+const canvas = document.querySelector("canvas");
+
 
 const ctx = canvas.getContext("2d");
 
@@ -106,9 +106,9 @@ function checkCollision(square1, square2) {
     );
 }
 
-// Event listener for mouse click on canvas
+// Event listener to stop animation loop on click and display percentage volume
 canvas.addEventListener("click", function (event) {
-    isAnimating = !isAnimating; // Toggle animation state
+    isAnimating = !isAnimating; //when click, stop animating
 
     if (isAnimating) {
         loop(); // Restart animation loop
@@ -123,14 +123,15 @@ canvas.addEventListener("click", function (event) {
     
 
     // Display intersection percentage on the canvas
-    ctx.fillStyle = "#000000"; // Set text color to black
-    ctx.font = "20px Times New Roman";
+    ctx.fillStyle = "white"; // Set text color to black
+    ctx.font = "30px Times New Roman";
     
-    ctx.fillText(`Your Volume Level: ${intersectionPercentage}%`, 10, 30);
+    ctx.fillText(`Your Volume Level: ${intersectionPercentage}%`, 450, 21);// includes coordiantes  where text is displayed on screen
 });
 
 // Function to calculate intersection percentage
 function calculateIntersectionPercentage() {
+
     const square1 = squares[0];
     const square2 = squares[1];
 
@@ -140,6 +141,7 @@ function calculateIntersectionPercentage() {
     const maxY = Math.min(square1.y + square1.size, square2.y + square2.size);
 
     const intersectionArea = Math.max(0, maxX - minX) * Math.max(0, maxY - minY);
+
     const totalArea = square1.size * square1.size + square2.size * square2.size - intersectionArea;
 
     return ((intersectionArea / totalArea) * 100).toFixed(2);
