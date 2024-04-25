@@ -87,10 +87,12 @@ function loop() {
     for (const square of squares) {
         square.draw();
         square.update();
+    
     }
 
     if (isAnimating) {
         animationId = requestAnimationFrame(loop);
+    
     }
 }
 
@@ -111,9 +113,13 @@ canvas.addEventListener("click", function (event) {
     isAnimating = !isAnimating; //when click, stop animating
 
     if (isAnimating) {
+        
         loop(); // Restart animation loop
+        
+        
     } else {
         cancelAnimationFrame(animationId); // Pause animation loop
+        squares.color = randomRGBA(0.5);
     }
 
     // Calculate and display intersection percentage
@@ -146,3 +152,9 @@ function calculateIntersectionPercentage() {
 
     return ((intersectionArea / totalArea) * 100).toFixed(2);
 }
+
+
+
+
+/// to change color randomly when clicked again add square.color = randomRGBA(0.3); somewhere
+/// to change size randomly when clicked again add size = random somwhere in code
