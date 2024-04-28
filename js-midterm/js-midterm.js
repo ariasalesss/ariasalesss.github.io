@@ -64,12 +64,12 @@ const squares = [];// array to hold squares
 
 
 while (squares.length<2) {
-    const size = random(200, 700); // Random size of the square 
-    const x = random(0, width - size); // Random x coordinate
-    const y = random(0, height - size); // Random y coordinate
-    const velX = random(-3, 3); // Random horizontal velocity
-    const velY = random(-3, 3); // Random vertical velocity
-    const color = randomRGBA(0.5); // Random color with transparency
+    let size = random(200, 700); // Random size of the square 
+    let x = random(0, width - size); // Random x coordinate
+    let y = random(0, height - size); // Random y coordinate
+    let velX = random(-3, 3); // Random horizontal velocity
+    let velY = random(-3, 3); // Random vertical velocity
+    let color = randomRGBA(0.5); // Random color with transparency
 
     squares.push(new Square(x, y, velX, velY, color, size));//create new square with same parameters
 }
@@ -112,15 +112,20 @@ function checkCollision(square1, square2) {
 canvas.addEventListener("click", function (event) {
     isAnimating = !isAnimating; //when click, stop animating
 
+
+    
     if (isAnimating) {
-        
+
         loop(); // Restart animation loop
         
-        
+        location.reload();
     } else {
+        
         cancelAnimationFrame(animationId); // Pause animation loop
-        squares.color = randomRGBA(0.5);
+        
     }
+
+  
 
     // Calculate and display intersection percentage
     const intersectionPercentage = calculateIntersectionPercentage();
