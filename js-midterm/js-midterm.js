@@ -119,6 +119,7 @@ canvas.addEventListener("click", function (event) {
         loop(); // Restart animation loop
         
         location.reload();
+        
     } else {
         
         cancelAnimationFrame(animationId); // Pause animation loop
@@ -146,9 +147,9 @@ function calculateIntersectionPercentage() {
     const square1 = squares[0];
     const square2 = squares[1];
 
-    const minX = Math.max(square1.x, square2.x);
-    const minY = Math.max(square1.y, square2.y);
-    const maxX = Math.min(square1.x + square1.size, square2.x + square2.size);
+    const minX = Math.max(square1.x, square2.x); // the larger x coordinate/left intersection boundary
+    const minY = Math.max(square1.y, square2.y);//the top boundary/larger y coordinate
+    const maxX = Math.min(square1.x + square1.size, square2.x + square2.size); // size is side of square because all sides are same size
     const maxY = Math.min(square1.y + square1.size, square2.y + square2.size);
 
     const intersectionArea = Math.max(0, maxX - minX) * Math.max(0, maxY - minY);
