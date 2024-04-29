@@ -129,18 +129,8 @@ canvas.addEventListener("click", function (event) {
 
     // Calculate and display intersection percentage
     const intersectionPercentage = calculateIntersectionPercentage();
-    console.log("Intersection Percentage:", intersectionPercentage);
-
-    
-
-    // Display intersection percentage on the canvas
-    ctx.fillStyle = "white"; // Set text color to black
-    ctx.font = "30px Times New Roman";
-
-    
-    ctx.fillText(`Your Volume Level: ${intersectionPercentage}%`, 450, 21);// includes coordiantes  where text is displayed on screen
-
-    
+    const percentage_span = document.querySelector("#percentage");
+    percentage_span.innerHTML = `${intersectionPercentage}%`;
 });
 
 // Function to calculate intersection percentage
