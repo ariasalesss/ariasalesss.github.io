@@ -1,8 +1,8 @@
 body {
-    background-image: linear-gradient(to top, #6331eb, rgb(176, 143, 233) 100%, transparent 50%),
-    linear-gradient(to right, #6331eb,rgb(176, 143, 233) 100%, transparent 100%),
-    linear-gradient(to bottom, #6331eb, rgb(176, 143, 233) 100%, transparent 100%),
-    linear-gradient(to left, #6331eb, rgb(176, 143, 233) 50%, transparent 50%); ;
+    background-image: linear-gradient(to top,  rgb(172, 19, 27), rgb(255, 171, 16), #ebdc31,  rgb(134, 226, 21),  rgb(15, 255, 143), 100%,  rgb(19, 121, 172),  rgb(85, 19, 172),  rgb(255, 25, 247), transparent 50%),
+    linear-gradient(to right, #31eb85,rgb(233, 143, 143) 100%, transparent 50%),
+    linear-gradient(to bottom, #eb6331, rgb(23, 115, 228) 100%, transparent 50%),
+    linear-gradient(to left, #6331eb, rgb(176, 143, 233) 50%, transparent 50%);
     height:100%;
     margin:0;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@ body {
     text-align: center;
     color: white;
     font-size: 20pt;
-    
+
   }
 
   @media screen and (max-width: 400px){

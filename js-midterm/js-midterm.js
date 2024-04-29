@@ -1,7 +1,6 @@
 // Create canvas setup
 const canvas = document.querySelector("canvas");
 
-
 const ctx = canvas.getContext("2d");
 
 const width = (canvas.width = window.innerWidth);
@@ -67,8 +66,8 @@ while (squares.length<2) {
     let size = random(200, 700); // Random size of the square 
     let x = random(0, width - size); // Random x coordinate
     let y = random(0, height - size); // Random y coordinate
-    let velX = random(-3, 3); // Random horizontal velocity
-    let velY = random(-3, 3); // Random vertical velocity
+    let velX = random(-9, 9); // Random horizontal velocity
+    let velY = random(-9, 9); // Random vertical velocity
     let color = randomRGBA(0.5); // Random color with transparency
 
     squares.push(new Square(x, y, velX, velY, color, size));//create new square with same parameters
@@ -137,8 +136,11 @@ canvas.addEventListener("click", function (event) {
     // Display intersection percentage on the canvas
     ctx.fillStyle = "white"; // Set text color to black
     ctx.font = "30px Times New Roman";
+
     
     ctx.fillText(`Your Volume Level: ${intersectionPercentage}%`, 450, 21);// includes coordiantes  where text is displayed on screen
+
+    
 });
 
 // Function to calculate intersection percentage
