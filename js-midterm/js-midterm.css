@@ -4,7 +4,6 @@ body {
     linear-gradient(to bottom, #eb6331, rgb(23, 115, 228) 100%, transparent 50%),
     linear-gradient(to left, #6331eb, rgb(176, 143, 233) 50%, transparent 50%);
     height:100%;
-    margin:0;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
@@ -13,17 +12,12 @@ body {
     color: white;
     font-size: 20pt;
 
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+
   }
 
-  @media screen and (max-width: 400px){
-    .grid{
-        display: flex;
-        flex-direction: column;
-    }
-    .body{
-        display: flex;
-        flex-direction: column;
-    }
-  }
-
+ 
  
